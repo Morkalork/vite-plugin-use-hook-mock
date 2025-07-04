@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-use-hook-mock",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vite plugin to auto-swap use-* hook imports for .mock.ts(x) siblings when they exist",
   "type": "module",
   "main": "dist/index.js",
