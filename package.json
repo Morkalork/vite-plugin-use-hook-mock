@@ -1,0 +1,47 @@
+{
+  "name": "vite-plugin-use-hook-mock",
+  "version": "0.1.0",
+  "description": "Vite plugin to auto-swap use-* hook imports for .mock.ts(x) siblings when they exist",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "mock",
+    "hooks",
+    "typescript"
+  ],
+  "author": "Magnus Ferm <magnus@consultant.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "vite": "^3.0.0 || ^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "typescript": "^5.0.0",
+    "vite": "^4.0.0"
+  },
+  "categories": [
+    "build",
+    "vite-plugin",
+    "mocking",
+    "react-hooks"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Morkalork/vite-plugin-use-hook-mock"
+  }
+}
