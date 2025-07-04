@@ -109,6 +109,22 @@ Open a Pull Request
 
 Please adhere to the existing code style and add tests as necessary.
 
+## To publish a new version of the plugin
+
+Run the following commands:
+
+```bash
+npm login
+
+npm publish --access public
+
+npm version patch
+
+git push --follow-tags
+
+npm publish
+```
+
 ## 🗎 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
